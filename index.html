@@ -172,10 +172,19 @@
       @media (max-width: 768px) {
         header {
           padding: 20px;
+          flex-direction: column;
+        }
+        .logo img {
+          width: 150px;
         }
         .control-buttons {
           flex-direction: column;
           padding-left: 0;
+          margin-left: 0;
+        }
+        .control-buttons button {
+          padding: 10px 20px;
+          font-size: 16px;
         }
         .popup-form {
           width: 80%;
@@ -185,6 +194,7 @@
           font-size: 24px;
         }
       }
+
       @media (max-width: 480px) {
         header {
           padding: 10px;
@@ -210,6 +220,14 @@
         }
         .form-icons a {
           font-size: 20px;
+        }
+        .showcase {
+          min-height: 100vh;
+          padding: 10px;
+        }
+        .showcase video {
+          width: 100%;
+          height: auto;
         }
       }
     </style>
